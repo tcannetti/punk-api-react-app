@@ -5,6 +5,7 @@ import './App.css';
 
 import BeerCard from "./BeerCard"
 
+
 class App extends Component{
   constructor(){
     super()
@@ -24,13 +25,19 @@ class App extends Component{
   
   render(){
       return (
-        <div className="App">
+      <div className="App">
         <header className="App-header">
-        <ol>{this.state.arrayOfBeer.map((beer, index) => {
-          return(
-            <BeerCard key={index} name={beer.name} image_url={beer.image_url}/>
-          ) 
-        })}</ol>
+          <ol>{this.state.arrayOfBeer.map((beer, index) => {
+            return(
+              <BeerCard key={index} 
+                name={beer.name} 
+                image_url={beer.image_url} 
+                tagline={beer.tagline}
+                first_brewed={beer.first_brewed}
+                description={beer.description}
+              />
+            ) 
+          })}</ol>
         </header>
       </div>
     );

@@ -1,0 +1,29 @@
+.appCard{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: .8rem 0;
+  padding: 1rem;
+}
+
+.beerCard{
+  display:flex;
+}
+
+.beerImg{
+  height: 200px;
+  object-fit: contain;
+}
+
+.beerList{
+  height: 100%;
+  list-style-type: none;
+  align-self: center;
+  margin-left: 32px;
+  padding-left: 16px;
+}
+
+.likeButton {
+  margin-top: 16px;
+  align-self: center;
+}
